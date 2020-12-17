@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountInfo">
+   <children>
+      <Label layoutX="182.0" layoutY="38.0" text="Информация о компании">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+       <Button layoutX="500.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReadyButton" text="Готово" />
+      <GridPane layoutX="141.0" layoutY="105.0" prefHeight="191.0" prefWidth="318.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="92.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="226.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Логин:" />
+            <Label text="Пароль:" GridPane.rowIndex="1" />
+            <Label text="Имя:" GridPane.rowIndex="2" />
+            <Label text="Должность:" GridPane.rowIndex="3" />
+            <Label text="Роль:" GridPane.rowIndex="4" />
+            <TextField fx:id="login" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="password" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="name" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="position" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="role" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+
+   </children>
+</AnchorPane>

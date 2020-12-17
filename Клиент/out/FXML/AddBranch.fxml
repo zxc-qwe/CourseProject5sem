@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddBranch">
+   <children>
+      <Label layoutX="204.0" layoutY="38.0" text="Добавление отрасли">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="132.0" layoutY="132.0" prefHeight="136.0" prefWidth="351.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="198.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="93.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Название:" />
+            <Label text="\% ВВП на отрасль:" GridPane.rowIndex="1" />
+            <Label text="Кол-во компаний в отрасли:" GridPane.rowIndex="2" />
+            <TextField fx:id="name" onAction="#AddButton" promptText="Название" GridPane.columnIndex="1" />
+            <TextField fx:id="vvp_percent" onAction="#AddButton" prefHeight="31.0" prefWidth="155.0" promptText="\% ВВП" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="companiesNum" onAction="#AddButton" promptText="Кол-во компаний" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="500.0" layoutY="340.0" mnemonicParsing="false" onAction="#AddButton" text="Добавить" />
+      <Button fx:id="Назад" layoutX="30.0" layoutY="340.0" mnemonicParsing="false" onAction="#BackButton" text="Назад" />
+   </children>
+</AnchorPane>
