@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RatioCompanies">
+   <children>
+      <Label layoutX="168.0" layoutY="38.0" text="Просмотреть коэффициенты">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="51.0" layoutY="100.0" prefHeight="244.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="company" prefWidth="199.0" text="Компания" />
+        </columns>
+      </TableView>
+      <Button layoutX="333.0" layoutY="207.0" mnemonicParsing="false" onAction="#RatioButton" text="Просмтреть коэффициент" />
+      <Button layoutX="500.0" layoutY="340.0" mnemonicParsing="false" onAction="#BackButton" text="Назад" />
+   </children>
+</AnchorPane>

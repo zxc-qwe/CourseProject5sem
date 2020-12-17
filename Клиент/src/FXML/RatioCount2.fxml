@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RatioCount2">
+   <children>
+      <Label layoutX="117.0" layoutY="38.0" text="Коэффициент финансовой зависимости">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="97.0" text="Коэффициент финансовой зависимости = Обязательства / Активы" />
+      <GridPane layoutX="117.0" layoutY="131.0" prefHeight="206.0" prefWidth="367.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="221.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="76.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Долгосрочные обязательства:" />
+            <Label text="Пассивы:" GridPane.rowIndex="5" />
+            <Label text="Краткосрочные обязательства:" GridPane.rowIndex="1" />
+            <Label text="Задолженность учередителям:" GridPane.rowIndex="2" />
+            <Label text="Доходы будущих периодов:" GridPane.rowIndex="3" />
+            <Label text="Резервы предстоящих расходов:" GridPane.rowIndex="4" />
+             <TextField fx:id="field1" onAction="#NextButton" GridPane.columnIndex="1" />
+            <TextField fx:id="field2" onAction="#NextButton" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="field3" onAction="#NextButton" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="field4" onAction="#NextButton" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="field5" onAction="#NextButton" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+             <TextField fx:id="field6" onAction="#NextButton" prefHeight="20.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button layoutX="500.0" layoutY="340.0" mnemonicParsing="false" onAction="#NextButton" text="Далее" />
+   </children>
+</AnchorPane>
